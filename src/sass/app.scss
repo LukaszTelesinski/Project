@@ -295,7 +295,6 @@ input[type="radio"]:checked {
 }
 
 .box {
-  display: flex;
   align-items: center;
   justify-content: center;
   border: solid 1px #fff;
@@ -314,7 +313,14 @@ input[type="radio"]:checked {
 
 .box-text {
   color: $text-secondary;
-  line-height: 30px;
+  line-height: 25px;
+  padding-top: 10px;
+  margin: 0 10px;
+}
+
+.icon {
+  position: relative;
+  top: 30px;
 }
 
 .container-8 {
@@ -330,6 +336,7 @@ input[type="radio"]:checked {
   line-height: 40px;
   font-weight: lighter;
   font-size: 25px;
+  text-align: center;
 }
 
 .container-9 {
@@ -556,4 +563,91 @@ a, a:link, a:visited, a:hover, a:active {
     .nav-links:hover {
       color: rgba(255, 255, 255, 1);
     }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container-1 {
+    display: flex;
+    padding: 20px 20px 20px;
+    background: $primary;
+    color: #fff;
+  }
+
+  .back {
+    font-size: 20px;
+    color: #fff;
+    font-family: Helvetica;
+    background: $primary;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .brand-name {
+    font-size: 24px;
+    font-weight: 180;
+    line-height: 35px;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 50px 20px;
+    background: $primary;
+    color: #fff;
+  }
+
+  .green-button {
+    align-self: flex-start;
+    position: relative;
+    top: 10px;
+  }
+
+  .container-3 {
+    padding: 0 20px 50px 20px;
+    background: $primary;
+    height: 70px;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-color: #e8e9ed;
+  }
+   
+  table tr td {
+    border-right: 1px solid #e8e9ed;
+    border-bottom: 1px solid #e8e9ed;
+    padding: 25px;
+    background: $white;
+    line-height: 15px;
+  }
+
+  .container-4 {
+    display: flex;
+    padding: 100px 20px 50px 20px;
+    margin-top: 70px;
+  }
+  
+  .object-description {
+    color: $text-primary;
+    line-height: 30px;
+    font-weight: lighter;
+  }
+
+  .container-5 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+  }
+  
+  .object-content {
+    align-self: flex-end;
+    width: 75%;
+    color: $text-secondary;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
 }
