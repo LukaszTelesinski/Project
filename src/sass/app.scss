@@ -392,7 +392,7 @@ input[type="radio"]:checked {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
-  margin-top: 10px;
+  margin-top: 5px;
   z-index: 1;
 }
 
@@ -574,6 +574,10 @@ a, a:link, a:visited, a:hover, a:active {
     color: #fff;
   }
 
+  .logo {
+    margin-left: 20px;
+  }
+
   .back {
     font-size: 20px;
     color: #fff;
@@ -690,25 +694,18 @@ a, a:link, a:visited, a:hover, a:active {
     font-size: large;
     color: $white;
     line-height: 40px;
+    margin-bottom: -50px;
   }
 
   .container-7 {
-    display: flex;
-    flex-wrap: wrap;
-    background: $primary;
     padding: 0 20px;
+    justify-content: space-between;
   }
 
   .box {
-    align-items: center;
-    justify-content: center;
-    border: solid 1px #fff;
-    border-radius: 10px;
-    background: $white;
     width: 200px;
     height: 150px;
     padding: 5px;
-    margin-top: -50px;
     margin-bottom: 100px;
     text-align: center;
   }
@@ -727,6 +724,12 @@ a, a:link, a:visited, a:hover, a:active {
 
   .container-8 {
     padding: 0 20px 70px;
+  }
+
+  .dropdown-content {
+    line-height: 25px;
+    padding: 18px 22px;
+    font-size: 16px;
   }
   
   .agent {
@@ -748,7 +751,7 @@ a, a:link, a:visited, a:hover, a:active {
   .circle {
     position: absolute;
     top: -40px;
-    left: 190px;
+    left: 190px !important;
   }
 
   .dropdown-container {
@@ -765,6 +768,7 @@ a, a:link, a:visited, a:hover, a:active {
     border: 1px solid #fff;
     padding: 20px;
     width: 100%;
+    margin-left: 35px;
   }
   
   .image-up, .image-down {
@@ -825,7 +829,62 @@ a, a:link, a:visited, a:hover, a:active {
     padding-top: 20px;
   }
 
+  .footer-column4 {
+    margin-right: 100px;
+  }
+
   .container-adress {
     padding: 0 100px 200px 20px;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .box {
+    background: $white;
+    width: 190px;
+    height: 150px;
+    padding: 5px;
+    margin-top: -10px;
+    margin-bottom: 100px;
+  }
+
+  .box-text {
+    color: $text-secondary;
+    line-height: 20px;
+    padding-top: 10px;
+    margin: 0 5px;
+  }
+  
+  .icon {
+    position: relative;
+    top: 10px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: -40px;
+    left: 450px;
+  }
+
+  .left-image {
+    padding: 30px;
+    width: 380px;
+    height: 380px;
+  }
+  
+  .image-up, .image-down {
+    padding: 25px;
+    margin: 10px;
+    width: 179px;
+    height: 179px;
+  }
+  
+  .column-right {
+    align-self: flex-end;
+    margin-left: 24px;
+  }
+
+  .column-logo {
+    padding-right: 10px;
   }
 }
