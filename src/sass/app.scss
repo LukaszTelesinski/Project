@@ -67,6 +67,9 @@ h1 {
 .navbar-toggle:before {
   content: 'Menu';
   font-size: 15px;
+  position: absolute;
+  right: 25px;
+  top: 4px;
 }
   
 .active {
@@ -479,6 +482,18 @@ input[type="radio"]:checked {
   color: $text-secondary;
 }
 
+.tel1 {
+  margin-left: 45px;
+}
+
+.tel2 {
+  margin-left: -44px;
+}
+
+.tel3 {
+  margin-left: -15px;
+}
+
 .container-footer {
   display: flex;
   justify-content: space-between;
@@ -568,10 +583,7 @@ a, a:link, a:visited, a:hover, a:active {
 @media screen and (max-width: 768px) {
 
   .container-1 {
-    display: flex;
     padding: 20px 20px 20px;
-    background: $primary;
-    color: #fff;
   }
 
   .logo {
@@ -580,11 +592,6 @@ a, a:link, a:visited, a:hover, a:active {
 
   .back {
     font-size: 20px;
-    color: #fff;
-    font-family: Helvetica;
-    background: $primary;
-    border: none;
-    cursor: pointer;
     margin-left: 10px;
   }
 
@@ -595,11 +602,8 @@ a, a:link, a:visited, a:hover, a:active {
   }
 
   .container-2 {
-    display: flex;
     flex-direction: column;
     padding: 0 20px 50px 20px;
-    background: $primary;
-    color: #fff;
   }
 
   .green-button {
@@ -610,46 +614,36 @@ a, a:link, a:visited, a:hover, a:active {
 
   .container-3 {
     padding: 0 20px 50px 20px;
-    background: $primary;
-    height: 70px;
+    height: 130px;
   }
 
   table {
-    border-collapse: separate;
-    border-spacing: 0;
     width: 100%;
     border-color: #e8e9ed;
   }
    
   table tr td {
-    border-right: 1px solid #e8e9ed;
-    border-bottom: 1px solid #e8e9ed;
     padding: 25px;
-    background: $white;
-    line-height: 15px;
+    line-height: 12px;
+    text-align: center; 
   }
 
   .table-text {
-    font-weight: bold;
-    font-size: 15px;
-    color: $text-primary;
+    font-size: 12px;
     line-height: 20px;
   }
 
   .container-4 {
-    display: flex;
     padding: 120px 20px 50px 20px;
     margin-top: 70px;
   }
   
   .object-description {
-    color: $text-primary;
     line-height: 30px;
     font-weight: lighter;
   }
 
   .container-5 {
-    display: flex;
     flex-direction: column;
     padding: 0 20px 0 20px;
   }
@@ -657,7 +651,6 @@ a, a:link, a:visited, a:hover, a:active {
   .object-content {
     align-self: flex-end;
     width: 75%;
-    color: $text-secondary;
     line-height: 30px;
     margin-bottom: 50px;
   }
@@ -685,14 +678,12 @@ a, a:link, a:visited, a:hover, a:active {
   }
 
   .container-6 {
-    display: flex;
     padding: 0 20px 100px;
     background: $primary;
   }
   
   .feature {
     font-size: large;
-    color: $white;
     line-height: 40px;
     margin-bottom: -50px;
   }
@@ -746,6 +737,9 @@ a, a:link, a:visited, a:hover, a:active {
 
   .box-2 {
     line-height: 35px;
+    height: 190px;
+    font-size: 14px;
+    margin-top: 10px;
   }
   
   .circle {
@@ -802,8 +796,20 @@ a, a:link, a:visited, a:hover, a:active {
     margin-left: 0;
   }
 
-  .tel {
+  .tel1, .tel2, .tel3, .tel4 {
     font-size: 12px;
+  }
+
+  .tel2 {
+    margin-left: -16px;
+  }
+
+  .tel3 {
+    margin-left: 7px;
+  }
+
+  .tel4 {
+    margin-left: 11px;
   }
 
   .contact-mail {
