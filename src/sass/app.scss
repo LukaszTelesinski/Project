@@ -76,14 +76,14 @@ h1 {
   display: block;
 }
 
-.container-1 {
+.head {
   display: flex;
   padding: 50px 100px 50px;
   background: $primary;
   color: #fff;
 }
 
-.container-2 {
+.brand {
   display: flex;
   flex-direction: column;
   padding: 0 100px 50px 100px;
@@ -91,7 +91,7 @@ h1 {
   color: #fff;
 }
 
-.arrow-left {
+.head__arrow {
   width: 0; 
   height: 0; 
   border-top: 10px solid transparent;
@@ -99,7 +99,7 @@ h1 {
   border-right: 10px solid; 
 }
 
-.back {
+.head__button {
   font-size: 20px;
   color: #fff;
   font-family: Helvetica;
@@ -109,13 +109,13 @@ h1 {
   margin-left: 10px;
 }
 
-.green-button {
+.brand__button {
   align-self: flex-end;
   position: relative;
   top: -50px;
 }
 
-.green {
+.button--green {
   padding: 15px;
   background: $green;
   border: none;
@@ -123,13 +123,13 @@ h1 {
   color: $white;
 }
 
-.brand-name {
+.brand__name {
   font-size: 30px;
   font-weight: 200;
   line-height: 50px;
 }
 
-.container-3 {
+.info {
   padding: 0 100px 50px 100px;
   background: $primary;
   height: 70px;
@@ -186,26 +186,26 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
-.container-4 {
+.object {
   display: flex;
   padding: 50px 100px 50px 100px;
   margin-top: 200px;
 }
 
-.object-description {
+.object__description {
   color: $text-primary;
   line-height: 40px;
   font-weight: lighter;
   width: 80%;
 }
 
-.container-5 {
+.description {
   display: flex;
   flex-direction: column;
   padding: 0 100px 0 100px;
 }
 
-.object-content {
+.description__content {
   align-self: flex-end;
   width: 50%;
   color: $text-secondary;
@@ -213,12 +213,12 @@ table tr:last-child td:last-child {
   margin-bottom: 50px;
 }
 
-.slider-title {
+.plans {
   display: flex;
   padding: 20px 100px 30px 100px;
 }
 
-.container-slider {
+.slider {
   display: flex;
   width: 100%;
   background: $primary;
@@ -245,7 +245,7 @@ input[type="radio"]:checked {
   outline: none;
 }
 
-.display-image {
+.slider__image {
   width: 100%;
   height: 500px;
   border: 2px solid #000;
@@ -265,31 +265,31 @@ input[type="radio"]:checked {
 #six{background-image: url("https://picsum.photos/id/767/640/300");background-size: cover;}
 
 
-#one:checked ~ .display-image {background-image: url("https://picsum.photos/id/237/1000/500");}
+#one:checked ~ .slider__image {background-image: url("https://picsum.photos/id/237/1000/500");}
 
-#two:checked ~ .display-image {background-image: url("https://picsum.photos/id/232/1000/500");}
+#two:checked ~ .slider__image {background-image: url("https://picsum.photos/id/232/1000/500");}
 
-#three:checked ~ .display-image {background-image: url("https://picsum.photos/id/217/1000/500");}
+#three:checked ~ .slider__image {background-image: url("https://picsum.photos/id/217/1000/500");}
 
-#four:checked ~ .display-image {background-image: url("https://picsum.photos/id/437/1000/500");}
+#four:checked ~ .slider__image {background-image: url("https://picsum.photos/id/437/1000/500");}
 
-#five:checked ~ .display-image {background-image: url("https://picsum.photos/id/137/1000/500");}
+#five:checked ~ .slider__image {background-image: url("https://picsum.photos/id/137/1000/500");}
 
-#six:checked ~ .display-image {background-image: url("https://picsum.photos/id/767/1000/500");}
+#six:checked ~ .slider__image {background-image: url("https://picsum.photos/id/767/1000/500");}
 
-.container-6 {
+.value {
   display: flex;
   padding: 0 100px 50px;
   background: $primary;
 }
 
-.feature {
+.value__header {
   font-size: x-large;
   color: $white;
   line-height: 50px;
 }
 
-.container-7 {
+.card {
   display: flex;
   flex-wrap: wrap;
   background: $primary;
@@ -297,7 +297,7 @@ input[type="radio"]:checked {
   padding: 0 100px;
 }
 
-.box {
+.card__box {
   align-items: center;
   justify-content: center;
   border: solid 1px #fff;
@@ -314,19 +314,19 @@ input[type="radio"]:checked {
   box-shadow: 7px 9px 24px -1px rgba(130,130,130,0.68);
 }
 
-.box-text {
+.box__text {
   color: $text-secondary;
   line-height: 25px;
   padding-top: 10px;
   margin: 0 10px;
 }
 
-.icon {
+.box__icon {
   position: relative;
   top: 30px;
 }
 
-.container-8 {
+.agent {
   display: flex;
   padding: 0 100px 70px;
   justify-content: center;
@@ -334,7 +334,7 @@ input[type="radio"]:checked {
   background: $primary;
 }
 
-.agent {
+.agent__header {
   color: $white;
   line-height: 40px;
   font-weight: lighter;
@@ -365,6 +365,20 @@ input[type="radio"]:checked {
   -webkit-box-shadow: 7px 9px 24px -8px rgba(0,0,0,0.82);
   -moz-box-shadow: 7px 9px 24px -8px rgba(0,0,0,0.82);
   box-shadow: 7px 9px 24px -8px rgba(0,0,0,0.82);
+}
+
+.box2-mail {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mail {
+  padding-bottom: 5px;
+}
+
+.box2-contact {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .circle {
@@ -582,7 +596,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 @media screen and (max-width: 768px) {
 
-  .container-1 {
+  .head {
     padding: 20px 20px 20px;
   }
 
@@ -590,29 +604,29 @@ a, a:link, a:visited, a:hover, a:active {
     margin-left: 20px;
   }
 
-  .back {
+  .head__button {
     font-size: 20px;
     margin-left: 10px;
   }
 
-  .brand-name {
+  .brand__name {
     font-size: 24px;
     font-weight: 180;
     line-height: 35px;
   }
 
-  .container-2 {
+  .brand {
     flex-direction: column;
     padding: 0 20px 50px 20px;
   }
 
-  .green-button {
+  .brand__button {
     align-self: flex-start;
     position: relative;
     top: 10px;
   }
 
-  .container-3 {
+  .info {
     padding: 0 20px 50px 20px;
     height: 130px;
   }
@@ -633,33 +647,33 @@ a, a:link, a:visited, a:hover, a:active {
     line-height: 20px;
   }
 
-  .container-4 {
+  .object {
     padding: 120px 20px 50px 20px;
     margin-top: 70px;
   }
   
-  .object-description {
+  .object__description {
     line-height: 30px;
     font-weight: lighter;
   }
 
-  .container-5 {
+  .description {
     flex-direction: column;
     padding: 0 20px 0 20px;
   }
   
-  .object-content {
+  .description__content {
     align-self: flex-end;
     width: 75%;
     line-height: 30px;
     margin-bottom: 50px;
   }
 
-  .slider-title {
+  .plans {
     padding: 20px 20px 30px 20px;
   }
 
-  .container-slider {
+  .slider {
     padding-bottom: 400px;
   }
 
@@ -672,28 +686,28 @@ a, a:link, a:visited, a:hover, a:active {
     margin-right: 10px;
   }
 
-  .display-image {
+  .slider__image {
     width: 100%;
     height: 400px;
   }
 
-  .container-6 {
+  .value {
     padding: 0 20px 100px;
     background: $primary;
   }
   
-  .feature {
+  .value__header {
     font-size: large;
     line-height: 40px;
     margin-bottom: -50px;
   }
 
-  .container-7 {
+  .card {
     padding: 0 20px;
     justify-content: space-between;
   }
 
-  .box {
+  .card__box {
     width: 250px;
     height: 190px;
     padding: 5px;
@@ -701,19 +715,19 @@ a, a:link, a:visited, a:hover, a:active {
     text-align: center;
   }
 
-  .box-text {
+  .box__text {
     color: $text-secondary;
     line-height: 20px;
     padding-top: 10px;
     margin: 0 5px;
   }
   
-  .icon {
+  .box__icon {
     position: relative;
     top: 10px;
   }
 
-  .container-8 {
+  .agent {
     padding: 0 20px 70px;
   }
 
@@ -723,7 +737,7 @@ a, a:link, a:visited, a:hover, a:active {
     font-size: 16px;
   }
   
-  .agent {
+  .agent__header {
     line-height: 35px;
     font-weight: lighter;
     font-size: 20px;
@@ -845,7 +859,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 @media screen and (max-width: 1026px) {
-  .box {
+  .card__box {
     background: $white;
     width: 190px;
     height: 150px;
@@ -854,14 +868,14 @@ a, a:link, a:visited, a:hover, a:active {
     margin-bottom: 100px;
   }
 
-  .box-text {
+  .box__text {
     color: $text-secondary;
     line-height: 20px;
     padding-top: 10px;
     margin: 0 5px;
   }
   
-  .icon {
+  .box__icon {
     position: relative;
     top: 10px;
   }
